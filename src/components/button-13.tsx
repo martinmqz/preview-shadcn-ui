@@ -1,8 +1,8 @@
-import { Button, ButtonProps } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
+import type { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/utils";
 import { StarIcon } from "lucide-react";
-
-const ButtonNeon = ({ className, ...props }: ButtonProps) => (
+const ButtonNeon = ({ className, ...props }: ComponentPropsWithoutRef<typeof Button>) => (
   <Button
     className={cn(
       "bg-indigo-500 text-primary-foreground hover:bg-indigo-600 dark:text-foreground shadow-lg shadow-indigo-400 dark:shadow-indigo-700",
