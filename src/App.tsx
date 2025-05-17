@@ -1,174 +1,60 @@
 import './App.css'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import SocialButtonDemo from './components/button-11'
-import SocialLoginButtonDemo from './components/button-12'
-import SplitButton from './components/button-07'
-import ToggleButton from './components/button-15'
-import ThemeToggleButton from './components/button-16'
-import GroupButtonDemo from './components/button-18'
-import GroupButton2Demo from './components/button-19'
-import CopyButton from './components/button-20'
-import ButtonsWithBadge from './components/button-21'
-import ButtonsWithTooltip from './components/button-22'
-import ButtonsWithTapAnimation from './components/button-23'
-import IconButtonDemo from './components/button-05'
-import LoadingButtonDemo from './components/button-06'
-import GradientButtonDemo from './components/button-09'
-import LinkButtonDemo from './components/button-10'
-import NeonButtonDemo from './components/button-13'
-import RoundedButtonDemo from './components/button-14'
-import FullWidthButtonDemo from './components/button-17'
+
+import ThemeToggleButton from './components/Buttons/button-16'
+import DemoButtons from './components/DemoButtons'
+import DemoCards from './components/DemoCards'
+import DemoCarousels from './components/DemoCarousels'
+import DemoAccordions from './components/DemoAccordions'
+import DemoDropdownMenus from './components/DemoDropdownMenus'
+import DemoNavMenus from './components/DemoNavigationMenus'
+import DemoPaginations from './components/DemoPaginations'
+import DemoSpinners from './components/DemoSpinners'
+import DemoTables from './components/DemoTables'
+import DemoTabs from './components/DemoTabs'
+import DemoTooltips from './components/DemoTooltips'
+import DemoBreadcrumbs from './components/DemoBreadcrumbs'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs'
+
+const tabs = [
+  { name:'Buttons', value:'buttons', content: <DemoButtons />},
+  { name:'Cards', value:'cards', content: <DemoCards />},
+  { name:'Carousels', value:'carousels', content: <DemoCarousels />},
+  { name:'Accordions', value:'accordions', content: <DemoAccordions />},
+  { name:'Dropdown Menus', value:'dropdown-menus', content: <DemoDropdownMenus />},
+  { name:'Navigation Menus', value:'nav-menus', content: <DemoNavMenus />},
+  { name:'Paginations', value:'paginations', content: <DemoPaginations />},
+  { name:'Spinners', value:'spinners', content: <DemoSpinners />},
+  { name:'Tables', value:'tables', content: <DemoTables />},
+  { name:'Tabs', value:'tabs', content: <DemoTabs />},
+  { name:'Tooltips', value:'tooltips', content: <DemoTooltips />},
+  { name:'Breadcrumbs', value:'breadcrumbs', content: <DemoBreadcrumbs />}
+]
 
 function App() {
   return (
-    <div className="app">
-      <div>
-        <ThemeToggleButton />
-      </div>
-      <div className='app-grid'>
-        <div className="app-grid__item--separator w-full">
-          <div className="grid-item__title text-5xl py-8">Buttons</div>
+    <div className='w-full'>
+      <header className='sticky top-0 bg-(--background) border-b-1 z-1'>
+        <div className='max-w-[1600px] m-auto p-6 flex items-baseline justify-between'>
+          <h1 className='text-2xl font-bold'>Shadcn Component with Tailwind CSS</h1>
+          <div className='text-xs italic'>Dark/Light Mode &nbsp;<ThemeToggleButton /></div>
         </div>
-
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Primary</div>
-          <Button>Primary</Button>
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Secondary</div>
-          <Button variant="secondary">Secondary</Button>
-        </div>
-        <div className="app-grid__item">
-          <div className='grid-item__title'>Destructive</div>
-          <Button variant="destructive">Destructive</Button>
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Outline</div>
-          <Button variant="outline">Outline</Button>
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Icon</div>
-          <IconButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Loading</div>
-          <LoadingButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Split Button</div>
-          <SplitButton />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Ghost</div>
-          <Button variant="ghost">Ghost</Button>
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Gradient</div>
-          <GradientButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Link</div>
-          <LinkButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Social</div>
-          <SocialButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Social Login</div>
-          <SocialLoginButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Neon</div>
-          <NeonButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Rounded</div>
-          <RoundedButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Toggle</div>
-          <ToggleButton />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Theme Toggle</div>
-          <ThemeToggleButton />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Full Width</div>
-          <FullWidthButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Group</div>
-          <GroupButtonDemo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Group 2</div>
-          <GroupButton2Demo />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>Copy Button</div>
-          <CopyButton />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>With badge</div>
-          <ButtonsWithBadge />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>With tooltip</div>
-          <ButtonsWithTooltip />
-        </div>
-        <div className='app-grid__item'>
-          <div className='grid-item__title'>With tap animation</div>
-          <ButtonsWithTapAnimation />
-        </div>
-
-        <div className="app-grid__item--separator w-full">
-          <div className="grid-item__title text-5xl py-8">Cards</div>
-        </div>
-
-        <div className="app-grid__item">
-          <div className="grid-item__title">Card</div>
-          <Card className="w-[350px]">
-            <CardHeader>
-              <CardTitle>Create project</CardTitle>
-              <CardDescription>Deploy your new project in one-click.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form>
-                <div className="grid w-full items-center gap-4">
-                  <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Name of your project" />
-                  </div>
-                  <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="framework">Framework</Label>
-                    <Select>
-                      <SelectTrigger id="framework">
-                        <SelectValue placeholder="Select" />
-                      </SelectTrigger>
-                      <SelectContent position="popper">
-                        <SelectItem value="next">Next.js</SelectItem>
-                        <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                        <SelectItem value="astro">Astro</SelectItem>
-                        <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-              </form>
-            </CardContent>
-            <CardFooter className="flex justify-between">
-              <Button variant="outline">Cancel</Button>
-              <Button>Deploy</Button>
-            </CardFooter>
-          </Card>
-        </div>
-      </div>
+      </header>
+    <main className='max-w-[1600px] m-auto p-6'>
+      <Tabs orientation='vertical' defaultValue={tabs[0].value} className='flex-row items-start gap-4 justify-center'>
+        <TabsList className='shrink-0 grid grid-cols-1 h-auto w-fit gap-1 sticky top-35'>
+          {tabs.map(tab => (
+            <TabsTrigger key={tab.value} value={tab.value} className='py-1.5'>
+              {tab.name}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+        {tabs.map((tab) => (
+            <TabsContent key={tab.value} value={tab.value} className='flex flex-wrap font-medium text-muted-foreground'>
+              {tab.content}
+            </TabsContent>
+          ))}
+      </Tabs>
+    </main>
     </div>
   )
 }

@@ -11,9 +11,6 @@ const ThemeToggleButton = () => {
 
   const toggleTheme = () => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
-    // if (document.body.parentElement) {
-    //   document.body.parentElement.className = resolvedTheme ?? "";
-    // }
   };
 
   useEffect(() => {
