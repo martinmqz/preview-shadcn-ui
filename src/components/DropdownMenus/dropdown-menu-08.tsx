@@ -1,43 +1,43 @@
-"use client";
+"use client"
 
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { Check, ChevronsUpDown } from "lucide-react"
+import { useState } from "react"
 
 const workspaces = [
   {
     id: 1,
     name: "Workspace 1",
-    createdBy: "abc@example.com",
+    createdBy: "abc@example.com"
   },
   {
     id: 2,
     name: "Workspace 2",
-    createdBy: "def@example.com",
+    createdBy: "def@example.com"
   },
   {
     id: 3,
     name: "Workspace 3",
-    createdBy: "ghi@example.com",
-  },
-];
+    createdBy: "ghi@example.com"
+  }
+]
 
-export default function WorkspaceSwitcher() {
-  const [selectedWorkspace, setSelectedWorkspace] = useState(workspaces[0]);
+export default function WorkspaceSwitcher () {
+  const [ selectedWorkspace, setSelectedWorkspace ] = useState(workspaces[ 0 ])
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center gap-2 bg-accent py-2.5 px-3 rounded-lg">
         <Avatar className="rounded-lg h-8 w-8">
           <AvatarFallback className="rounded-lg bg-primary text-primary-foreground">
-            {selectedWorkspace.name[0]}
+            {selectedWorkspace.name[ 0 ]}
           </AvatarFallback>
         </Avatar>
         <div className="text-start flex flex-col gap-1 leading-none">
@@ -60,7 +60,7 @@ export default function WorkspaceSwitcher() {
             <div className="flex items-center gap-2">
               <Avatar className="rounded-md h-8 w-8">
                 <AvatarFallback className="rounded-md bg-primary/10 text-foreground">
-                  {workspace.name[0]}
+                  {workspace.name[ 0 ]}
                 </AvatarFallback>
               </Avatar>
               <div className="flex flex-col">
@@ -77,5 +77,5 @@ export default function WorkspaceSwitcher() {
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge"
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { ChevronsRight } from "lucide-react";
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb"
+import { ChevronsRight } from "lucide-react"
 
 const BreadcrumbTabsDemo = () => {
   return (
@@ -46,7 +46,7 @@ const BreadcrumbTabsDemo = () => {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
-};
+  )
+}
 
-export default BreadcrumbTabsDemo;
+export default BreadcrumbTabsDemo

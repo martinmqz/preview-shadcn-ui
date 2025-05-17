@@ -1,37 +1,37 @@
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
-} from "@/components/ui/carousel";
-import { Progress } from "@/components/ui/progress";
+  type CarouselApi
+} from "@/components/ui/carousel"
+import { Progress } from "@/components/ui/progress"
 
-export default function CarouselWithProgress() {
-  const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+export default function CarouselWithProgress () {
+  const [ api, setApi ] = React.useState<CarouselApi>()
+  const [ current, setCurrent ] = React.useState(0)
+  const [ count, setCount ] = React.useState(0)
 
-  const progress = (current * 100) / count;
+  const progress = (current * 100) / count
 
   React.useEffect(() => {
     if (!api) {
-      return;
+      return
     }
 
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
 
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [ api ])
 
   return (
     <div className="mx-auto max-w-xs py-4">
@@ -52,5 +52,5 @@ export default function CarouselWithProgress() {
       </Carousel>
       <Progress value={progress} className="mt-4 w-24 ml-auto" />
     </div>
-  );
+  )
 }

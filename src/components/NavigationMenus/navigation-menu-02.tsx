@@ -3,17 +3,17 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { BookOpen, Home, Rss } from "lucide-react";
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu"
+import { BookOpen, Home, Rss } from "lucide-react"
 
 const navigationMenuItems = [
   { title: "Home", href: "#", icon: Home },
   { title: "Blog", href: "#blog", icon: Rss },
-  { title: "Docs", href: "#docs", icon: BookOpen },
-];
+  { title: "Docs", href: "#docs", icon: BookOpen }
+]
 
-export default function NavigationMenuWithIcon() {
+export default function NavigationMenuWithIcon () {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -32,5 +32,5 @@ export default function NavigationMenuWithIcon() {
         ))}
       </NavigationMenuList>
     </NavigationMenu>
-  );
+  )
 }

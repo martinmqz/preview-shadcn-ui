@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { ArrowRight, Shapes } from "lucide-react";
+  CardHeader
+} from "@/components/ui/card"
+import { ArrowRight, Shapes } from "lucide-react"
 
 const ProductCard = () => {
   return (
@@ -31,7 +31,7 @@ const ProductCard = () => {
         </Button>
       </CardFooter>
     </Card>
-  );
-};
+  )
+}
 
-export default ProductCard;
+export default ProductCard

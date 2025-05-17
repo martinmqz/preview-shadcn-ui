@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { TooltipArrow } from "@radix-ui/react-tooltip";
+  TooltipTrigger
+} from "@/components/ui/tooltip"
+import { TooltipArrow } from "@radix-ui/react-tooltip"
 
-export default function WithArrowTooltipDemo() {
+export default function WithArrowTooltipDemo () {
   return (
     <TooltipProvider>
       <Tooltip>
@@ -20,5 +20,5 @@ export default function WithArrowTooltipDemo() {
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  );
+  )
 }

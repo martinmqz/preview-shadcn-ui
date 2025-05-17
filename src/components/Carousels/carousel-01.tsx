@@ -1,13 +1,13 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselPrevious
+} from "@/components/ui/carousel"
 
-export default function CarouselDemo() {
+export default function CarouselDemo () {
   return (
     <Carousel className="w-full max-w-xs">
       <CarouselContent>
@@ -26,5 +26,5 @@ export default function CarouselDemo() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  );
+  )
 }

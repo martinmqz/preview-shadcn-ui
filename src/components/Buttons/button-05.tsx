@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Star } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Star } from "lucide-react"
 
 const IconButtonDemo = () => {
   return (
@@ -14,7 +14,7 @@ const IconButtonDemo = () => {
         Read More <ArrowRight />
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default IconButtonDemo;
+export default IconButtonDemo

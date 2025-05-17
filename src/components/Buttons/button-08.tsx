@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
-const GhostButtonDemo = () => <Button variant="ghost">Ghost</Button>;
+const GhostButtonDemo = () => <Button variant="ghost">Ghost</Button>
 
-export default GhostButtonDemo;
+export default GhostButtonDemo

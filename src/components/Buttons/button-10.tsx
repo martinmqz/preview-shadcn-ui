@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
 const LinkButtonDemo = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -7,6 +7,6 @@ const LinkButtonDemo = () => (
       Disabled Link
     </Button>
   </div>
-);
+)
 
-export default LinkButtonDemo;
+export default LinkButtonDemo

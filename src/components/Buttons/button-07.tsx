@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ChevronDown, Plus, Star, X } from "lucide-react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { ChevronDown, Plus, Star, X } from "lucide-react"
 
 const SplitButton = () => {
   return (
@@ -39,7 +39,7 @@ const SplitButton = () => {
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
-  );
-};
+  )
+}
 
-export default SplitButton;
+export default SplitButton

@@ -3,34 +3,34 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
-import { Package, ShoppingCart, Store, Truck } from "lucide-react";
-import { Fragment } from "react";
+  BreadcrumbPage
+} from "@/components/ui/breadcrumb"
+import { Package, ShoppingCart, Store, Truck } from "lucide-react"
+import { Fragment } from "react"
 
 const steps = [
   {
     label: "Store",
     href: "#/store",
-    icon: Store,
+    icon: Store
   },
   {
     label: "Delivery Tracking",
     href: "#/delivery-tracking",
-    icon: Truck,
+    icon: Truck
   },
   {
     label: "Cart",
     href: "#/cart",
-    icon: ShoppingCart,
+    icon: ShoppingCart
   },
   {
     label: "Package",
     href: "#/package",
     icon: Package,
-    active: true,
-  },
-];
+    active: true
+  }
+]
 
 const BreadcrumbsSteps = () => {
   return (
@@ -60,7 +60,7 @@ const BreadcrumbsSteps = () => {
         ))}
       </BreadcrumbList>
     </Breadcrumb>
-  );
-};
+  )
+}
 
-export default BreadcrumbsSteps;
+export default BreadcrumbsSteps

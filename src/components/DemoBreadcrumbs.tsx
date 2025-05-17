@@ -13,21 +13,21 @@ import BreadcrumbCollapsed from "./Breadcrumbs/breadcrumb-14"
 import BreadcrumbsSteps from "./Breadcrumbs/breadcrumb-15"
 
 const breadcrumbs = [
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Default</div><BreadcrumbsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Slash Separator</div><BreadcrumbsWithSlashSeparator /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Chevrons Separator</div><BreadcrumbsWithChevronsSeparator /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Dot Separator</div><BreadcrumbsWithDotSeparator /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With Icon</div><BreadcrumbsWithIcon /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With Icon 2</div><BreadcrumbsWithIcon /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With Icon and Label</div><BreadcrumbsWithIconAndLabel /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With Icon and Label 2</div><BreadcrumbsSteps /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With Background</div><BreadcrumbsWithBackground /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Tab Active</div><BreadcrumbTabActiveDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Tabs</div><BreadcrumbTabsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Tabs Outline</div><BreadcrumbTabsOutline /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With Dropdown</div><BreadcrumbWithDropdown /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Collapsed</div><BreadcrumbCollapsed /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Steps</div><BreadcrumbsSteps /></div>
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><BreadcrumbsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Slash Separator</div><BreadcrumbsWithSlashSeparator /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Chevrons Separator</div><BreadcrumbsWithChevronsSeparator /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Dot Separator</div><BreadcrumbsWithDotSeparator /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon</div><BreadcrumbsWithIcon /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon 2</div><BreadcrumbsWithIcon /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon and Label</div><BreadcrumbsWithIconAndLabel /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon and Label 2</div><BreadcrumbsSteps /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Background</div><BreadcrumbsWithBackground /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tab Active</div><BreadcrumbTabActiveDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs</div><BreadcrumbTabsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs Outline</div><BreadcrumbTabsOutline /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Dropdown</div><BreadcrumbWithDropdown /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Collapsed</div><BreadcrumbCollapsed /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Steps</div><BreadcrumbsSteps /></div>
 ]
 
 export default function DemoBreadcrumbs () {

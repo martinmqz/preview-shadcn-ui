@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  TooltipTrigger
+} from "@/components/ui/tooltip"
 
 const ButtonsWithTooltip = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -35,6 +35,6 @@ const ButtonsWithTooltip = () => (
       <TooltipContent side="right">Right tooltip</TooltipContent>
     </Tooltip>
   </div>
-);
+)
 
-export default ButtonsWithTooltip;
+export default ButtonsWithTooltip

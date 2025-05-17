@@ -1,19 +1,19 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+  CardHeader
+} from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
 import {
   HeartIcon,
   MessageCircleIcon,
   MoreHorizontalIcon,
-  ShareIcon,
-} from "lucide-react";
+  ShareIcon
+} from "lucide-react"
 
-export default function CardPost() {
+export default function CardPost () {
   return (
     <Card className="w-full max-w-xs shadow-none">
       <CardHeader className="flex flex-row items-center justify-between py-2">
@@ -60,5 +60,5 @@ export default function CardPost() {
         </Button>
       </CardFooter>
     </Card>
-  );
+  )
 }

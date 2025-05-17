@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
-const PrimaryButtonDemo = () => <Button>Primary</Button>;
+const PrimaryButtonDemo = () => <Button>Primary</Button>
 
-export default PrimaryButtonDemo;
+export default PrimaryButtonDemo

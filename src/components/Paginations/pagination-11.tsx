@@ -3,10 +3,10 @@ import {
   PaginationContent,
   PaginationItem,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+  PaginationPrevious
+} from "@/components/ui/pagination"
 
-export default function PaginationNumberless() {
+export default function PaginationNumberless () {
   return (
     <Pagination>
       <PaginationContent className="gap-0 border rounded-lg divide-x overflow-hidden">
@@ -18,5 +18,5 @@ export default function PaginationNumberless() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

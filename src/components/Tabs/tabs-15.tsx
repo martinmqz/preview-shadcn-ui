@@ -1,34 +1,34 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Bot, Home, Settings, User } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Bot, Home, Settings, User } from "lucide-react"
 
 const tabs = [
   {
     name: "Home",
     value: "home",
-    icon: Home,
+    icon: Home
   },
   {
     name: "Profile",
     value: "profile",
-    icon: User,
+    icon: User
   },
   {
     name: "Messages",
     value: "messages",
-    icon: Bot,
+    icon: Bot
   },
   {
     name: "Settings",
     value: "settings",
-    icon: Settings,
-  },
-];
+    icon: Settings
+  }
+]
 
-export default function VerticalSeparatedTabsDemo() {
+export default function VerticalSeparatedTabsDemo () {
   return (
     <Tabs
       orientation="vertical"
-      defaultValue={tabs[0].value}
+      defaultValue={tabs[ 0 ].value}
       className="max-w-md w-full flex-row items-start gap-4 justify-center"
     >
       <TabsList className="shrink-0 grid grid-cols-1 gap-1 p-0 bg-background">
@@ -51,5 +51,5 @@ export default function VerticalSeparatedTabsDemo() {
         ))}
       </div>
     </Tabs>
-  );
+  )
 }

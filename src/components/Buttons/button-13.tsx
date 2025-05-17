@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
-import type { ButtonHTMLAttributes } from "react";
-import { cn } from "@/lib/utils";
-import { StarIcon } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import type { ButtonHTMLAttributes } from "react"
+import { cn } from "@/lib/utils"
+import { StarIcon } from "lucide-react"
 type ButtonNeonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
   size?: "default" | "sm" | "lg" | "icon" | null | undefined;
-};
+}
 const ButtonNeon = ({ className, size, ...props }: ButtonNeonProps) => (
   <Button
     className={cn(
@@ -15,8 +15,7 @@ const ButtonNeon = ({ className, size, ...props }: ButtonNeonProps) => (
     size={size}
     {...props}
   />
-);
-
+)
 
 const NeonButtonDemo = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -28,6 +27,6 @@ const NeonButtonDemo = () => (
       <StarIcon /> Star
     </ButtonNeon>
   </div>
-);
+)
 
-export default NeonButtonDemo;
+export default NeonButtonDemo

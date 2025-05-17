@@ -4,12 +4,12 @@ import {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+  PaginationPrevious
+} from "@/components/ui/pagination"
 
-const pages = [1, 2, 3];
+const pages = [ 1, 2, 3 ]
 
-export default function PaginationWithRoundedButton() {
+export default function PaginationWithRoundedButton () {
   return (
     <Pagination>
       <PaginationContent>
@@ -32,5 +32,5 @@ export default function PaginationWithRoundedButton() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

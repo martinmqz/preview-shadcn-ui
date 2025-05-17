@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,11 +8,11 @@ import {
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { EllipsisVertical } from "lucide-react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { EllipsisVertical } from "lucide-react"
 
-export default function DropdownMenuWithShortcuts() {
+export default function DropdownMenuWithShortcuts () {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -48,5 +48,5 @@ export default function DropdownMenuWithShortcuts() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

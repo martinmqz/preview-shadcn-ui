@@ -2,13 +2,13 @@ import * as React from "react"
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
-  MoreHorizontalIcon,
+  MoreHorizontalIcon
 } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
 
-function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
+function Pagination ({ className, ...props }: React.ComponentProps<"nav">) {
   return (
     <nav
       role="navigation"
@@ -20,7 +20,7 @@ function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
   )
 }
 
-function PaginationContent({
+function PaginationContent ({
   className,
   ...props
 }: React.ComponentProps<"ul">) {
@@ -33,7 +33,7 @@ function PaginationContent({
   )
 }
 
-function PaginationItem({ ...props }: React.ComponentProps<"li">) {
+function PaginationItem ({ ...props }: React.ComponentProps<"li">) {
   return <li data-slot="pagination-item" {...props} />
 }
 
@@ -42,7 +42,7 @@ type PaginationLinkProps = {
 } & Pick<React.ComponentProps<typeof Button>, "size"> &
   React.ComponentProps<"a">
 
-function PaginationLink({
+function PaginationLink ({
   className,
   isActive,
   size = "icon",
@@ -56,7 +56,7 @@ function PaginationLink({
       className={cn(
         buttonVariants({
           variant: isActive ? "outline" : "ghost",
-          size,
+          size
         }),
         className
       )}
@@ -65,7 +65,7 @@ function PaginationLink({
   )
 }
 
-function PaginationPrevious({
+function PaginationPrevious ({
   className,
   ...props
 }: React.ComponentProps<typeof PaginationLink>) {
@@ -82,7 +82,7 @@ function PaginationPrevious({
   )
 }
 
-function PaginationNext({
+function PaginationNext ({
   className,
   ...props
 }: React.ComponentProps<typeof PaginationLink>) {
@@ -99,7 +99,7 @@ function PaginationNext({
   )
 }
 
-function PaginationEllipsis({
+function PaginationEllipsis ({
   className,
   ...props
 }: React.ComponentProps<"span">) {
@@ -123,5 +123,5 @@ export {
   PaginationItem,
   PaginationPrevious,
   PaginationNext,
-  PaginationEllipsis,
+  PaginationEllipsis
 }

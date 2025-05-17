@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Check, Copy } from "lucide-react";
-import React from "react";
+import { Button } from "@/components/ui/button"
+import { Check, Copy } from "lucide-react"
+import React from "react"
 
 const CopyButton = () => {
-  const { isCopied, copyToClipboard } = useCopyToClipboard();
-  const link = "https://www.shadcnui-blocks.com";
+  const { isCopied, copyToClipboard } = useCopyToClipboard()
+  const link = "https://www.shadcnui-blocks.com"
 
   return (
     <div className="flex items-center border rounded-full overflow-hidden p-1">
@@ -21,40 +21,40 @@ const CopyButton = () => {
         {isCopied ? <Check /> : <Copy />}
       </Button>
     </div>
-  );
-};
+  )
+}
 
 // @hooks/use-copy-to-clipboard.tsx
-function useCopyToClipboard({
+function useCopyToClipboard ({
   timeout = 2000,
-  onCopy,
+  onCopy
 }: {
   timeout?: number;
   onCopy?: () => void;
 } = {}) {
-  const [isCopied, setIsCopied] = React.useState(false);
+  const [ isCopied, setIsCopied ] = React.useState(false)
 
   const copyToClipboard = (value: string) => {
     if (typeof window === "undefined" || !navigator.clipboard.writeText) {
-      return;
+      return
     }
 
-    if (!value) return;
+    if (!value) return
 
     navigator.clipboard.writeText(value).then(() => {
-      setIsCopied(true);
+      setIsCopied(true)
 
       if (onCopy) {
-        onCopy();
+        onCopy()
       }
 
       setTimeout(() => {
-        setIsCopied(false);
-      }, timeout);
-    }, console.error);
-  };
+        setIsCopied(false)
+      }, timeout)
+    }, console.error)
+  }
 
-  return { isCopied, copyToClipboard };
+  return { isCopied, copyToClipboard }
 }
 
-export default CopyButton;
+export default CopyButton

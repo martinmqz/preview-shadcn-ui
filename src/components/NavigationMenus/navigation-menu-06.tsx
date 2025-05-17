@@ -5,19 +5,19 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu"
+import { cn } from "@/lib/utils"
 import {
   CreditCardIcon,
   Loader,
   SquareCheckIcon,
   SquareChevronUpIcon,
   SquarePowerIcon,
-  ToggleRight,
-} from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-import * as React from "react";
+  ToggleRight
+} from "lucide-react"
+import type { LucideIcon } from "lucide-react"
+import * as React from "react"
 const components: {
   title: string;
   href: string;
@@ -29,42 +29,42 @@ const components: {
     href: "/components/accordion",
     description:
       "A vertically stacked set of interactive headings that each reveal a section of content.",
-    icon: SquareChevronUpIcon,
+    icon: SquareChevronUpIcon
   },
   {
     title: "Button",
     href: "/components/button",
     description: "Displays a button or a component that looks like a button.",
-    icon: SquarePowerIcon,
+    icon: SquarePowerIcon
   },
   {
     title: "Card",
     href: "/components/card",
     description: "Displays a card with header, content, and footer.",
-    icon: CreditCardIcon,
+    icon: CreditCardIcon
   },
   {
     title: "Checkbox",
     href: "/components/checkbox",
     description:
       "A control that allows the user to toggle between checked and not checked.",
-    icon: SquareCheckIcon,
+    icon: SquareCheckIcon
   },
   {
     title: "Spinner",
     href: "/components/spinner",
     description: "Informs users about the status of ongoing processes.",
-    icon: Loader,
+    icon: Loader
   },
   {
     title: "Switch",
     href: "/components/switch",
     description:
       "A control that allows the user to toggle between checked and not checked.",
-    icon: ToggleRight,
-  },
-];
-export default function RichNavigationMenu() {
+    icon: ToggleRight
+  }
+]
+export default function RichNavigationMenu () {
   return (
     <NavigationMenu className="z-20">
       <NavigationMenuList>
@@ -140,7 +140,7 @@ export default function RichNavigationMenu() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  );
+  )
 }
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -167,6 +167,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  );
-});
-ListItem.displayName = "ListItem";
+  )
+})
+ListItem.displayName = "ListItem"

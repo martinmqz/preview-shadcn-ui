@@ -4,9 +4,9 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { ChevronsRight, Component, Home } from "lucide-react";
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb"
+import { ChevronsRight, Component, Home } from "lucide-react"
 
 const BreadcrumbsWithIcon = () => {
   return (
@@ -33,7 +33,7 @@ const BreadcrumbsWithIcon = () => {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
-};
+  )
+}
 
-export default BreadcrumbsWithIcon;
+export default BreadcrumbsWithIcon

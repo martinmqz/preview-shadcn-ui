@@ -2,30 +2,30 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger
+} from "@/components/ui/accordion"
 
 const items = [
   {
     title: "Is it accessible?",
-    content: "Yes. It adheres to the WAI-ARIA design pattern.",
+    content: "Yes. It adheres to the WAI-ARIA design pattern."
   },
   {
     title: "Is it styled?",
     content:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
+      "Yes. It comes with default styles that matches the other components' aesthetic."
   },
   {
     title: "Is it animated?",
     content:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
-  },
-];
+      "Yes. It's animated by default, but you can disable it if you prefer."
+  }
+]
 
-export default function AccordionMultipleOpenDemo() {
+export default function AccordionMultipleOpenDemo () {
   return (
     <Accordion
-      defaultValue={["item-0", "item-1"]}
+      defaultValue={[ "item-0", "item-1" ]}
       type="multiple"
       className="max-w-lg my-4 w-full"
     >
@@ -36,5 +36,5 @@ export default function AccordionMultipleOpenDemo() {
         </AccordionItem>
       ))}
     </Accordion>
-  );
+  )
 }

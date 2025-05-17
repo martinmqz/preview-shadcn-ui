@@ -1,6 +1,6 @@
-import { Loader2Icon } from "lucide-react";
+import { Loader2Icon } from "lucide-react"
 
-export default function SpinnerColorsDemo() {
+export default function SpinnerColorsDemo () {
   return (
     <div className="flex gap-4 flex-wrap">
       <Loader2Icon className="animate-spin" />
@@ -8,5 +8,5 @@ export default function SpinnerColorsDemo() {
       <Loader2Icon className="animate-spin text-indigo-500" />
       <Loader2Icon className="animate-spin text-rose-500" />
     </div>
-  );
+  )
 }

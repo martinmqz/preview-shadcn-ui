@@ -16,45 +16,45 @@ import DemoBreadcrumbs from './components/DemoBreadcrumbs'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs'
 
 const tabs = [
-  { name:'Buttons', value:'buttons', content: <DemoButtons />},
-  { name:'Cards', value:'cards', content: <DemoCards />},
-  { name:'Carousels', value:'carousels', content: <DemoCarousels />},
-  { name:'Accordions', value:'accordions', content: <DemoAccordions />},
-  { name:'Dropdown Menus', value:'dropdown-menus', content: <DemoDropdownMenus />},
-  { name:'Navigation Menus', value:'nav-menus', content: <DemoNavMenus />},
-  { name:'Paginations', value:'paginations', content: <DemoPaginations />},
-  { name:'Spinners', value:'spinners', content: <DemoSpinners />},
-  { name:'Tables', value:'tables', content: <DemoTables />},
-  { name:'Tabs', value:'tabs', content: <DemoTabs />},
-  { name:'Tooltips', value:'tooltips', content: <DemoTooltips />},
-  { name:'Breadcrumbs', value:'breadcrumbs', content: <DemoBreadcrumbs />}
+  { name: 'Buttons', value: 'buttons', content: <DemoButtons /> },
+  { name: 'Cards', value: 'cards', content: <DemoCards /> },
+  { name: 'Carousels', value: 'carousels', content: <DemoCarousels /> },
+  { name: 'Accordions', value: 'accordions', content: <DemoAccordions /> },
+  { name: 'Dropdown Menus', value: 'dropdown-menus', content: <DemoDropdownMenus /> },
+  { name: 'Navigation Menus', value: 'nav-menus', content: <DemoNavMenus /> },
+  { name: 'Paginations', value: 'paginations', content: <DemoPaginations /> },
+  { name: 'Spinners', value: 'spinners', content: <DemoSpinners /> },
+  { name: 'Tables', value: 'tables', content: <DemoTables /> },
+  { name: 'Tabs', value: 'tabs', content: <DemoTabs /> },
+  { name: 'Tooltips', value: 'tooltips', content: <DemoTooltips /> },
+  { name: 'Breadcrumbs', value: 'breadcrumbs', content: <DemoBreadcrumbs /> }
 ]
 
-function App() {
+function App () {
   return (
     <div className='w-full'>
       <header className='sticky top-0 bg-(--background) border-b-1 z-1'>
-        <div className='max-w-[1600px] m-auto p-6 flex items-baseline justify-between'>
+        <div className='max-w-[1920px] m-auto p-6 flex items-baseline justify-between'>
           <h1 className='text-2xl font-bold'>Shadcn Component with Tailwind CSS</h1>
           <div className='text-xs italic'>Dark/Light Mode &nbsp;<ThemeToggleButton /></div>
         </div>
       </header>
-    <main className='max-w-[1600px] m-auto p-6'>
-      <Tabs orientation='vertical' defaultValue={tabs[0].value} className='flex-row items-start gap-4 justify-center'>
-        <TabsList className='shrink-0 grid grid-cols-1 h-auto w-fit gap-1 sticky top-35'>
-          {tabs.map(tab => (
-            <TabsTrigger key={tab.value} value={tab.value} className='py-1.5'>
-              {tab.name}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-        {tabs.map((tab) => (
-            <TabsContent key={tab.value} value={tab.value} className='flex flex-wrap font-medium text-muted-foreground'>
+      <main className='max-w-[1920px] m-auto p-6'>
+        <Tabs orientation='vertical' defaultValue={tabs[ 0 ].value} className='flex-row items-start gap-6 justify-center'>
+          <TabsList className='shrink-0 grid grid-cols-1 h-auto w-fit gap-1 sticky top-33'>
+            {tabs.map(tab => (
+              <TabsTrigger key={tab.value} value={tab.value} className='py-1.5'>
+                {tab.name}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+          {tabs.map((tab) => (
+            <TabsContent key={tab.value} value={tab.value} className='flex flex-wrap gap-6 font-medium text-muted-foreground'>
               {tab.content}
             </TabsContent>
           ))}
-      </Tabs>
-    </main>
+        </Tabs>
+      </main>
     </div>
   )
 }

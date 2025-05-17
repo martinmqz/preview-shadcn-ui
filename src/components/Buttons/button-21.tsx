@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { BellIcon } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { BellIcon } from "lucide-react"
 
 const ButtonsWithBadge = () => (
   <div className="flex items-center gap-2">
@@ -12,6 +12,6 @@ const ButtonsWithBadge = () => (
       </span>
     </div>
   </div>
-);
+)
 
-export default ButtonsWithBadge;
+export default ButtonsWithBadge

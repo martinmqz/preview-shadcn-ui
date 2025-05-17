@@ -1,17 +1,17 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselPrevious
+} from "@/components/ui/carousel"
 
-export default function CarouselVertical() {
+export default function CarouselVertical () {
   return (
     <Carousel
       opts={{
-        align: "start",
+        align: "start"
       }}
       orientation="vertical"
       className="w-full max-w-xs my-14"
@@ -32,5 +32,5 @@ export default function CarouselVertical() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  );
+  )
 }

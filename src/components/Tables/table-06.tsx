@@ -4,8 +4,8 @@ import {
   TableCell,
   TableHead,
   TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+  TableRow
+} from "@/components/ui/table"
 
 const products = [
   {
@@ -16,7 +16,7 @@ const products = [
     rating: 4.5,
     stockQuantity: 120,
     supplier: "SoundTech Ltd",
-    dateAdded: "2024-01-15",
+    dateAdded: "2024-01-15"
   },
   {
     id: 102,
@@ -26,7 +26,7 @@ const products = [
     rating: 4.8,
     stockQuantity: 200,
     supplier: "FitGear Inc",
-    dateAdded: "2024-01-20",
+    dateAdded: "2024-01-20"
   },
   {
     id: 103,
@@ -36,7 +36,7 @@ const products = [
     rating: 4.2,
     stockQuantity: 80,
     supplier: "HomeBrew Supplies",
-    dateAdded: "2024-02-05",
+    dateAdded: "2024-02-05"
   },
   {
     id: 104,
@@ -46,7 +46,7 @@ const products = [
     rating: 4.6,
     stockQuantity: 150,
     supplier: "RunWell Co.",
-    dateAdded: "2024-03-15",
+    dateAdded: "2024-03-15"
   },
   {
     id: 105,
@@ -56,7 +56,7 @@ const products = [
     rating: 4.7,
     stockQuantity: 60,
     supplier: "TechTime",
-    dateAdded: "2024-04-10",
+    dateAdded: "2024-04-10"
   },
   {
     id: 106,
@@ -66,7 +66,7 @@ const products = [
     rating: 4.3,
     stockQuantity: 95,
     supplier: "GamePro Gear",
-    dateAdded: "2024-04-22",
+    dateAdded: "2024-04-22"
   },
   {
     id: 107,
@@ -76,7 +76,7 @@ const products = [
     rating: 4.4,
     stockQuantity: 110,
     supplier: "KitchenEssentials",
-    dateAdded: "2024-05-05",
+    dateAdded: "2024-05-05"
   },
   {
     id: 108,
@@ -86,7 +86,7 @@ const products = [
     rating: 4.1,
     stockQuantity: 130,
     supplier: "HomeEssentials",
-    dateAdded: "2024-05-18",
+    dateAdded: "2024-05-18"
   },
   {
     id: 109,
@@ -96,7 +96,7 @@ const products = [
     rating: 4.6,
     stockQuantity: 50,
     supplier: "FurniPro",
-    dateAdded: "2024-06-01",
+    dateAdded: "2024-06-01"
   },
   {
     id: 110,
@@ -106,11 +106,11 @@ const products = [
     rating: 4.5,
     stockQuantity: 210,
     supplier: "BrightLight",
-    dateAdded: "2024-06-10",
-  },
-];
+    dateAdded: "2024-06-10"
+  }
+]
 
-export default function StickyHeaderTableDemo() {
+export default function StickyHeaderTableDemo () {
   return (
     <div className="grid w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
       <Table>
@@ -145,5 +145,5 @@ export default function StickyHeaderTableDemo() {
         </TableBody>
       </Table>
     </div>
-  );
+  )
 }

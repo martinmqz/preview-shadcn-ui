@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Loader } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { Loader } from "lucide-react"
 
 const LoadingButtonDemo = () => {
   return (
@@ -11,7 +11,7 @@ const LoadingButtonDemo = () => {
         <Loader className="animate-spin" /> Loading
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default LoadingButtonDemo;
+export default LoadingButtonDemo

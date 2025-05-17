@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ArrowBigDown, ArrowBigUp } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { ArrowBigDown, ArrowBigUp } from "lucide-react"
 
 const GroupButton2Demo = () => (
   <div className="[&>*+*]:border-l-0">
@@ -17,6 +17,6 @@ const GroupButton2Demo = () => (
       <ArrowBigDown className="!h-5 !w-5" />
     </Button>
   </div>
-);
+)
 
-export default GroupButton2Demo;
+export default GroupButton2Demo

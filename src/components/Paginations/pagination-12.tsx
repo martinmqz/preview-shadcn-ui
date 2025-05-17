@@ -3,10 +3,10 @@ import {
   PaginationContent,
   PaginationItem,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+  PaginationPrevious
+} from "@/components/ui/pagination"
 
-export default function PaginationNumberless() {
+export default function PaginationNumberless () {
   return (
     <div className="w-full max-w-xs">
       <Pagination className="w-full">
@@ -23,5 +23,5 @@ export default function PaginationNumberless() {
         </PaginationContent>
       </Pagination>
     </div>
-  );
+  )
 }

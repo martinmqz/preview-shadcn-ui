@@ -1,34 +1,34 @@
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
-} from "@/components/ui/carousel";
-import { cn } from "@/lib/utils";
+  type CarouselApi
+} from "@/components/ui/carousel"
+import { cn } from "@/lib/utils"
 
-export default function SlideScale() {
-  const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  console.log("current :", current);
+export default function SlideScale () {
+  const [ api, setApi ] = React.useState<CarouselApi>()
+  const [ current, setCurrent ] = React.useState(0)
+  console.log("current :", current)
 
   React.useEffect(() => {
     if (!api) {
-      return;
+      return
     }
 
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCurrent(api.selectedScrollSnap() + 1)
 
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [ api ])
 
   return (
     <div className="mx-auto max-w-xs">
@@ -42,7 +42,7 @@ export default function SlideScale() {
             <CarouselItem key={index} className={cn("basis-[33%]", {})}>
               <Card
                 className={cn("transition-transform duration-500", {
-                  "scale-[0.6]": index !== current - 1,
+                  "scale-[0.6]": index !== current - 1
                 })}
               >
                 <CardContent className="flex aspect-square items-center justify-center p-6">
@@ -56,5 +56,5 @@ export default function SlideScale() {
         <CarouselNext />
       </Carousel>
     </div>
-  );
+  )
 }

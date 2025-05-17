@@ -10,17 +10,17 @@ import DataTableDensityDemo from "./Tables/table-10"
 import DataTableColumnsVisibilityDemo from "./Tables/table-11"
 
 const tables = [
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Default</div><TableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Bordered</div><BorderedTableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Striped rows</div><BorderedTableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Rounded corners</div><RoundedCornersTableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With pagination</div><TableWithPaginationDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Sticky header</div><StickyHeaderTableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Sticky columns</div><StickyColumnsTableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Overflow scroll</div><TableOverflowScrollDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Data Table</div><DataTableDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Data Table Density</div><DataTableDensityDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Columns Visibility</div><DataTableColumnsVisibilityDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><TableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Bordered</div><BorderedTableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Striped rows</div><BorderedTableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Rounded corners</div><RoundedCornersTableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With pagination</div><TableWithPaginationDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Sticky header</div><StickyHeaderTableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Sticky columns</div><StickyColumnsTableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Overflow scroll</div><TableOverflowScrollDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Data Table</div><DataTableDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Data Table Density</div><DataTableDensityDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Columns Visibility</div><DataTableColumnsVisibilityDemo /></div>
 ]
 
 export default function DemoTables () {

@@ -1,27 +1,27 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { useState } from "react";
-import type { ChangeEvent } from "react";
+  TooltipTrigger
+} from "@/components/ui/tooltip"
+import { useState } from "react"
+import type { ChangeEvent } from "react"
 
-export default function WithSkipDelayTooltipDemo() {
-  const [skipDelayDuration, setSkipDelayDuration] = useState<
+export default function WithSkipDelayTooltipDemo () {
+  const [ skipDelayDuration, setSkipDelayDuration ] = useState<
     number | undefined
-  >(300);
+  >(300)
 
   const handleDelayDurationChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSkipDelayDuration(
       e.target.value === "" ? undefined : Math.max(0, +e.target.value)
-    );
-  };
+    )
+  }
 
   return (
     <div className="flex flex-col gap-6 items-center">
@@ -56,5 +56,5 @@ export default function WithSkipDelayTooltipDemo() {
         />
       </div>
     </div>
-  );
+  )
 }

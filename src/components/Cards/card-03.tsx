@@ -1,16 +1,16 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
+  CardTitle
+} from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Separator } from "@/components/ui/separator"
 
-export default function CreateAccountCard() {
+export default function CreateAccountCard () {
   return (
     <Card className="w-[350px]">
       <CardHeader>
@@ -81,5 +81,5 @@ export default function CreateAccountCard() {
         </form>
       </CardContent>
     </Card>
-  );
+  )
 }

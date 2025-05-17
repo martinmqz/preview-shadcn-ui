@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+:root {
+  --thirdbasis: calc(96.7%/3);
+}
 .grid-item__title {
   /* text-align: left; */
   border-bottom: 1px dotted var(--foreground);

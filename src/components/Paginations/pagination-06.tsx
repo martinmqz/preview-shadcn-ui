@@ -2,16 +2,16 @@ import {
   Pagination,
   PaginationContent,
   PaginationItem,
-  PaginationLink,
-} from "@/components/ui/pagination";
+  PaginationLink
+} from "@/components/ui/pagination"
 import {
   ChevronFirst,
   ChevronLast,
   ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+  ChevronRight
+} from "lucide-react"
 
-export default function PaginationWithFirstAndLastPageNavigation() {
+export default function PaginationWithFirstAndLastPageNavigation () {
   return (
     <Pagination>
       <PaginationContent>
@@ -48,5 +48,5 @@ export default function PaginationWithFirstAndLastPageNavigation() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

@@ -8,15 +8,15 @@ import ProductCard from './Cards/card-07'
 import TestimonialCard from './Cards/card-08'
 
 const cards = [
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Default</div><CardDemo /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With background</div><CardWithBackground /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Sign Up</div><CreateAccountCard /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Banner</div><CardBanner /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Pricing</div><PricingCard /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Post</div><CardPost /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Product</div><ProductCard /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Testimonial</div><TestimonialCard /></div>
-  ]
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><CardDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With background</div><CardWithBackground /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Sign Up</div><CreateAccountCard /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Banner</div><CardBanner /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Pricing</div><PricingCard /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Post</div><CardPost /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Product</div><ProductCard /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Testimonial</div><TestimonialCard /></div>
+]
 
 export default function DemoCards () {
   return (
@@ -28,4 +28,4 @@ export default function DemoCards () {
       }
     </>
   )
-}
+};

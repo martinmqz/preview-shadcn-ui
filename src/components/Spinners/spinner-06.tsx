@@ -49,7 +49,7 @@ const SwirlingEffectSpinner = () => {
         />
       </svg>
     </>
-  );
-};
+  )
+}
 
-export default SwirlingEffectSpinner;
+export default SwirlingEffectSpinner

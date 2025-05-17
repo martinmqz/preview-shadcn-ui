@@ -7,13 +7,13 @@ import WithSkipDelayTooltipDemo from "./Tooltips/tooltip-06"
 import TooltipPortalDemo from "./Tooltips/tooltip-07"
 
 const tooltips = [
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Default</div><TooltipDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With arrow</div><WithArrowTooltipDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Directions</div><TooltipDirectionsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Disable Hoverable Content</div><TooltipWithDisabledHoverableContentDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With delay</div><WithDelayTooltipDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With skip delay</div><WithSkipDelayTooltipDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Portal</div><TooltipPortalDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><TooltipDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With arrow</div><WithArrowTooltipDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Directions</div><TooltipDirectionsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Disable Hoverable Content</div><TooltipWithDisabledHoverableContentDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With delay</div><WithDelayTooltipDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With skip delay</div><WithSkipDelayTooltipDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Portal</div><TooltipPortalDemo /></div>
 ]
 
 export default function DemoTooltips () {
@@ -26,4 +26,4 @@ export default function DemoTooltips () {
       }
     </>
   )
-}
+};

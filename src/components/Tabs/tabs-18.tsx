@@ -1,40 +1,40 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BanIcon, MoreHorizontalIcon } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { BanIcon, MoreHorizontalIcon } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 const followers = [
   { username: "jane_doe", fullName: "Jane Doe" },
   { username: "tech_guru", fullName: "Alex Thompson" },
   { username: "nature_lover", fullName: "Emma Green" },
   { username: "photogirl", fullName: "Sophia Martinez" },
-  { username: "code_master", fullName: "Liam Patel" },
-];
+  { username: "code_master", fullName: "Liam Patel" }
+]
 
 const following = [
   { username: "startup_guy", fullName: "James Lee" },
   { username: "design_dreamer", fullName: "Mia Wilson" },
   { username: "art_addict", fullName: "Benjamin White" },
   { username: "web_wizard", fullName: "Lucas Nguyen" },
-  { username: "health_nut", fullName: "Ella Singh" },
-];
+  { username: "health_nut", fullName: "Ella Singh" }
+]
 
 const listVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
+      staggerChildren: 0.15
+    }
+  }
+}
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
+  visible: { opacity: 1, y: 0 }
+}
 
 const UserList = ({ users }: { users: typeof following }) => (
   <AnimatePresence>
@@ -73,9 +73,9 @@ const UserList = ({ users }: { users: typeof following }) => (
       ))}
     </motion.div>
   </AnimatePresence>
-);
+)
 
-export default function AnimatedTabsDemo() {
+export default function AnimatedTabsDemo () {
   return (
     <Tabs defaultValue="followers" className="max-w-xs w-full">
       <TabsList className="w-full grid grid-cols-2">
@@ -92,5 +92,5 @@ export default function AnimatedTabsDemo() {
         </TabsContent>
       </div>
     </Tabs>
-  );
+  )
 }

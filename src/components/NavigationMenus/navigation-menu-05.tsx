@@ -2,18 +2,18 @@ import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
-import { BookOpen, Home, Rss } from "lucide-react";
+  NavigationMenuList
+} from "@/components/ui/navigation-menu"
+import { cn } from "@/lib/utils"
+import { BookOpen, Home, Rss } from "lucide-react"
 
 const navigationMenuItems = [
   { title: "Home", href: "#", icon: Home, isActive: true },
   { title: "Blog", href: "#blog", icon: Rss },
-  { title: "Docs", href: "#docs", icon: BookOpen },
-];
+  { title: "Docs", href: "#docs", icon: BookOpen }
+]
 
-export default function NavigationMenuWithActiveItem() {
+export default function NavigationMenuWithActiveItem () {
   return (
     <NavigationMenu>
       <NavigationMenuList className="space-x-8">
@@ -40,5 +40,5 @@ export default function NavigationMenuWithActiveItem() {
         ))}
       </NavigationMenuList>
     </NavigationMenu>
-  );
+  )
 }

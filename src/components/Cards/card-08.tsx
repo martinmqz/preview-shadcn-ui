@@ -1,6 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Quote } from "lucide-react"
 
 const TestimonialCard = () => {
   return (
@@ -31,7 +31,7 @@ const TestimonialCard = () => {
         </p>
       </CardContent>
     </Card>
-  );
-};
+  )
+}
 
-export default TestimonialCard;
+export default TestimonialCard

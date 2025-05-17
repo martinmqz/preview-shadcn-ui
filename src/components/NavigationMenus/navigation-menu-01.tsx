@@ -3,16 +3,16 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu"
 
 const navigationMenuItems = [
   { title: "Home", href: "#" },
   { title: "Blog", href: "#blog" },
-  { title: "Docs", href: "#docs" },
-];
+  { title: "Docs", href: "#docs" }
+]
 
-export default function NavigationMenuDemo() {
+export default function NavigationMenuDemo () {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -28,5 +28,5 @@ export default function NavigationMenuDemo() {
         ))}
       </NavigationMenuList>
     </NavigationMenu>
-  );
+  )
 }

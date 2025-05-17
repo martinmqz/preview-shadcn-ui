@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  TooltipTrigger
+} from "@/components/ui/tooltip"
 
-export default function TooltipDirectionsDemo() {
+export default function TooltipDirectionsDemo () {
   return (
     <TooltipProvider>
       <div className="flex gap-2 flex-wrap">
@@ -47,5 +47,5 @@ export default function TooltipDirectionsDemo() {
         </Tooltip>
       </div>
     </TooltipProvider>
-  );
+  )
 }

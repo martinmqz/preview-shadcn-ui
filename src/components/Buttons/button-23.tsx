@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import * as motion from "framer-motion/client";
-import { StarIcon } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import * as motion from "framer-motion/client"
+import { StarIcon } from "lucide-react"
 
 const ButtonsWithTapAnimation = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -18,6 +18,6 @@ const ButtonsWithTapAnimation = () => (
       </motion.button>
     </Button>
   </div>
-);
+)
 
-export default ButtonsWithTapAnimation;
+export default ButtonsWithTapAnimation

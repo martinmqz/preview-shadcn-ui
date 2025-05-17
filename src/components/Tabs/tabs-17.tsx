@@ -1,26 +1,26 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
-import { Bot, Settings, User } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { cn } from "@/lib/utils"
+import { Bot, Settings, User } from "lucide-react"
 
 const tabs = [
   {
     value: "profile",
-    icon: User,
+    icon: User
   },
   {
     value: "chat",
-    icon: Bot,
+    icon: Bot
   },
   {
     value: "settings",
-    icon: Settings,
-  },
-];
+    icon: Settings
+  }
+]
 
 const VerticalBorderedTabs = () => {
   return (
     <Tabs
-      defaultValue={tabs[0].value}
+      defaultValue={tabs[ 0 ].value}
       orientation="vertical"
       className="w-full flex-row items-start justify-center gap-2"
     >
@@ -52,7 +52,7 @@ const VerticalBorderedTabs = () => {
         ))}
       </div>
     </Tabs>
-  );
-};
+  )
+}
 
-export default VerticalBorderedTabs;
+export default VerticalBorderedTabs

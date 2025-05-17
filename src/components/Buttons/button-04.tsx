@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
-const OutlineButtonDemo = () => <Button variant="outline">Outline</Button>;
+const OutlineButtonDemo = () => <Button variant="outline">Outline</Button>
 
-export default OutlineButtonDemo;
+export default OutlineButtonDemo

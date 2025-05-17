@@ -1,42 +1,42 @@
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
-} from "@/components/ui/carousel";
-import { cn } from "@/lib/utils";
+  type CarouselApi
+} from "@/components/ui/carousel"
+import { cn } from "@/lib/utils"
 
-export default function CarouselWithThumbs() {
-  const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+export default function CarouselWithThumbs () {
+  const [ api, setApi ] = React.useState<CarouselApi>()
+  const [ current, setCurrent ] = React.useState(0)
+  const [ count, setCount ] = React.useState(0)
 
   React.useEffect(() => {
     if (!api) {
-      return;
+      return
     }
 
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
 
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [ api ])
 
   const handleThumbClick = React.useCallback(
     (index: number) => {
-      api?.scrollTo(index);
+      api?.scrollTo(index)
     },
-    [api]
-  );
+    [ api ]
+  )
 
   return (
     <div className="mx-auto max-w-xs">
@@ -77,5 +77,5 @@ export default function CarouselWithThumbs() {
         <CarouselNext />
       </Carousel>
     </div>
-  );
+  )
 }

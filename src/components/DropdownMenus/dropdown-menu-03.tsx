@@ -1,31 +1,31 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { useState } from "react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { useState } from "react"
 
-const tags = ["Sport", "Music", "Food", "Travel", "Tech", "Science", "Art"];
+const tags = [ "Sport", "Music", "Food", "Travel", "Tech", "Science", "Art" ]
 
-export default function DropdownMenuWithCheckboxes() {
-  const [selectedTags, setSelectedTags] = useState<string[]>([
-    tags[0],
-    tags[4],
-  ]);
+export default function DropdownMenuWithCheckboxes () {
+  const [ selectedTags, setSelectedTags ] = useState<string[]>([
+    tags[ 0 ],
+    tags[ 4 ]
+  ])
 
   const handleTagChange = (tag: string, checked: boolean) => {
     if (checked) {
-      setSelectedTags([...selectedTags, tag]);
+      setSelectedTags([ ...selectedTags, tag ])
     } else {
-      setSelectedTags(selectedTags.filter((t) => t !== tag));
+      setSelectedTags(selectedTags.filter((t) => t !== tag))
     }
-  };
+  }
 
   return (
     <DropdownMenu>
@@ -48,5 +48,5 @@ export default function DropdownMenuWithCheckboxes() {
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

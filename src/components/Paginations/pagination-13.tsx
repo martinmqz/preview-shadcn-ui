@@ -5,10 +5,10 @@ import {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+  PaginationPrevious
+} from "@/components/ui/pagination"
 
-export default function PaginationWithEllipsis() {
+export default function PaginationWithEllipsis () {
   return (
     <Pagination>
       <PaginationContent>
@@ -34,5 +34,5 @@ export default function PaginationWithEllipsis() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

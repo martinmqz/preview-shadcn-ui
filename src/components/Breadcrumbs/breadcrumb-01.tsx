@@ -4,8 +4,8 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb"
 
 const BreadcrumbsDemo = () => {
   return (
@@ -24,7 +24,7 @@ const BreadcrumbsDemo = () => {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
-};
+  )
+}
 
-export default BreadcrumbsDemo;
+export default BreadcrumbsDemo

@@ -4,10 +4,10 @@ import {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+  PaginationPrevious
+} from "@/components/ui/pagination"
 
-export default function PaginationDemo() {
+export default function PaginationDemo () {
   return (
     <Pagination>
       <PaginationContent>
@@ -30,5 +30,5 @@ export default function PaginationDemo() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

@@ -4,9 +4,9 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Slash } from "lucide-react";
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb"
+import { Slash } from "lucide-react"
 
 const BreadcrumbsWithSlashSeparator = () => {
   return (
@@ -29,7 +29,7 @@ const BreadcrumbsWithSlashSeparator = () => {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
-};
+  )
+}
 
-export default BreadcrumbsWithSlashSeparator;
+export default BreadcrumbsWithSlashSeparator

@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { StarIcon } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { StarIcon } from "lucide-react"
 
 const RoundedButtonDemo = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -11,6 +11,6 @@ const RoundedButtonDemo = () => (
       <StarIcon /> Star
     </Button>
   </div>
-);
+)
 
-export default RoundedButtonDemo;
+export default RoundedButtonDemo

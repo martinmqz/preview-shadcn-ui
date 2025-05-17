@@ -1,26 +1,26 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button"
+import { Label } from "@/components/ui/label"
 import {
   Pagination,
   PaginationContent,
-  PaginationItem,
-} from "@/components/ui/pagination";
+  PaginationItem
+} from "@/components/ui/pagination"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
-import React from "react";
+  SelectValue
+} from "@/components/ui/select"
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import React from "react"
 
-export default function TablePagination() {
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-  const [page] = React.useState(1);
-  const TOTAL_ITEMS = 100;
+export default function TablePagination () {
+  const [ rowsPerPage, setRowsPerPage ] = React.useState(10)
+  const [ page ] = React.useState(1)
+  const TOTAL_ITEMS = 100
 
   return (
     <div className="w-full flex items-center justify-between gap-2">
@@ -73,5 +73,5 @@ export default function TablePagination() {
         </Pagination>
       </div>
     </div>
-  );
+  )
 }

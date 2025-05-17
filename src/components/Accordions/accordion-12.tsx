@@ -2,33 +2,33 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
-import { Contrast, Palette, Zap } from "lucide-react";
+  AccordionTrigger
+} from "@/components/ui/accordion"
+import { cn } from "@/lib/utils"
+import { Contrast, Palette, Zap } from "lucide-react"
 
 const items = [
   {
     title: "Is it accessible?",
     content: "Yes. It adheres to the WAI-ARIA design pattern.",
-    icon: Contrast,
+    icon: Contrast
   },
   {
     title: "Is it styled?",
     content:
       "Yes. It comes with default styles that matches the other components' aesthetic.",
     icon: Palette,
-    disabled: true,
+    disabled: true
   },
   {
     title: "Is it animated?",
     content:
       "Yes. It's animated by default, but you can disable it if you prefer.",
-    icon: Zap,
-  },
-];
+    icon: Zap
+  }
+]
 
-export default function AccordionItemDisabledDemo() {
+export default function AccordionItemDisabledDemo () {
   return (
     <Accordion
       defaultValue="item-0"
@@ -41,7 +41,7 @@ export default function AccordionItemDisabledDemo() {
           <AccordionTrigger
             disabled={disabled}
             className={cn({
-              "opacity-50": disabled,
+              "opacity-50": disabled
             })}
           >
             <div className="flex items-start gap-3">
@@ -53,5 +53,5 @@ export default function AccordionItemDisabledDemo() {
         </AccordionItem>
       ))}
     </Accordion>
-  );
+  )
 }

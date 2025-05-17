@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  TooltipTrigger
+} from "@/components/ui/tooltip"
 
-export default function TooltipWithDisabledHoverableContentDemo() {
+export default function TooltipWithDisabledHoverableContentDemo () {
   return (
     <TooltipProvider>
       <Tooltip disableHoverableContent>
@@ -18,5 +18,5 @@ export default function TooltipWithDisabledHoverableContentDemo() {
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  );
+  )
 }

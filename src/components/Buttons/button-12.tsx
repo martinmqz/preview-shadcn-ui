@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
 const SocialLoginButtonDemo = () => {
   return (
@@ -47,7 +47,7 @@ const SocialLoginButtonDemo = () => {
         Sign up with Twitter
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default SocialLoginButtonDemo;
+export default SocialLoginButtonDemo

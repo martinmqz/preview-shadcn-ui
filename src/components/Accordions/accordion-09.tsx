@@ -1,29 +1,29 @@
 import {
   Accordion,
   AccordionContent,
-  AccordionItem,
-} from "@/components/ui/accordion";
-import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { Plus } from "lucide-react";
+  AccordionItem
+} from "@/components/ui/accordion"
+import * as AccordionPrimitive from "@radix-ui/react-accordion"
+import { Plus } from "lucide-react"
 
 const items = [
   {
     title: "Is it accessible?",
-    content: "Yes. It adheres to the WAI-ARIA design pattern.",
+    content: "Yes. It adheres to the WAI-ARIA design pattern."
   },
   {
     title: "Is it styled?",
     content:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
+      "Yes. It comes with default styles that matches the other components' aesthetic."
   },
   {
     title: "Is it animated?",
     content:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
-  },
-];
+      "Yes. It's animated by default, but you can disable it if you prefer."
+  }
+]
 
-export default function AccordionDefaultOpenDemo() {
+export default function AccordionDefaultOpenDemo () {
   return (
     <Accordion
       defaultValue="item-0"
@@ -43,5 +43,5 @@ export default function AccordionDefaultOpenDemo() {
         </AccordionItem>
       ))}
     </Accordion>
-  );
+  )
 }

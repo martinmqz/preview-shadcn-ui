@@ -1,15 +1,15 @@
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { LogOut, Settings, User } from "lucide-react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { LogOut, Settings, User } from "lucide-react"
 
-export default function DropdownMenuWithIcon() {
+export default function DropdownMenuWithIcon () {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="focus:outline-none focus:ring-[2px] focus:ring-offset-2 focus:ring-primary rounded-full">
@@ -31,5 +31,5 @@ export default function DropdownMenuWithIcon() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

@@ -5,17 +5,17 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Home } from "lucide-react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { Home } from "lucide-react"
 
-export default function BreadcrumbCollapsed() {
+export default function BreadcrumbCollapsed () {
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -47,5 +47,5 @@ export default function BreadcrumbCollapsed() {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
+  )
 }

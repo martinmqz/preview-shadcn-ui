@@ -1,16 +1,16 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-export default function CarouselWithMultipleSlides() {
+  CarouselPrevious
+} from "@/components/ui/carousel"
+export default function CarouselWithMultipleSlides () {
   return (
     <Carousel
       opts={{
-        align: "start",
+        align: "start"
       }}
       className="w-full max-w-sm"
     >
@@ -30,5 +30,5 @@ export default function CarouselWithMultipleSlides() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  );
+  )
 }

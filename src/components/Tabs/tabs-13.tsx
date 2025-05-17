@@ -1,29 +1,29 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const tabs = [
   {
     name: "Home",
-    value: "home",
+    value: "home"
   },
   {
     name: "Profile",
-    value: "profile",
+    value: "profile"
   },
   {
     name: "Messages",
-    value: "messages",
+    value: "messages"
   },
   {
     name: "Settings",
-    value: "settings",
-  },
-];
+    value: "settings"
+  }
+]
 
-export default function VerticalTabsDemo() {
+export default function VerticalTabsDemo () {
   return (
     <Tabs
       orientation="vertical"
-      defaultValue={tabs[0].value}
+      defaultValue={tabs[ 0 ].value}
       className="max-w-md w-full flex-row items-start gap-4 justify-center"
     >
       <TabsList className="shrink-0 grid grid-cols-1 h-auto w-fit gap-1">
@@ -42,5 +42,5 @@ export default function VerticalTabsDemo() {
         ))}
       </div>
     </Tabs>
-  );
+  )
 }

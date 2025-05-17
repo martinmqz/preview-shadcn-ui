@@ -1,5 +1,5 @@
-"use client";
-import { Button } from "@/components/ui/button";
+"use client"
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,13 +7,13 @@ import {
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ChevronDown, ChevronsUp, ChevronUp, Equal } from "lucide-react";
-import { useState } from "react";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { ChevronDown, ChevronsUp, ChevronUp, Equal } from "lucide-react"
+import { useState } from "react"
 
-export default function DropdownMenuWithRadioGroup() {
-  const [priority, setPriority] = useState("highest");
+export default function DropdownMenuWithRadioGroup () {
+  const [ priority, setPriority ] = useState("highest")
 
   return (
     <DropdownMenu>
@@ -39,5 +39,5 @@ export default function DropdownMenuWithRadioGroup() {
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

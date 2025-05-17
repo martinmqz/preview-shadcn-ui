@@ -1,17 +1,17 @@
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button"
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
-import { cn } from "@/lib/utils";
+  PaginationPrevious
+} from "@/components/ui/pagination"
+import { cn } from "@/lib/utils"
 
-const pages = [1, 2, 3];
+const pages = [ 1, 2, 3 ]
 
-export default function PaginationBordered() {
+export default function PaginationBordered () {
   return (
     <Pagination>
       <PaginationContent className="gap-0 border rounded-lg divide-x overflow-hidden">
@@ -19,7 +19,7 @@ export default function PaginationBordered() {
           <PaginationPrevious href="#" className="rounded-none" />
         </PaginationItem>
         {pages.map((page) => {
-          const isActive = page === 2;
+          const isActive = page === 2
 
           return (
             <PaginationItem key={page}>
@@ -27,10 +27,10 @@ export default function PaginationBordered() {
                 href={`#${page}`}
                 className={cn(
                   {
-                    [buttonVariants({
+                    [ buttonVariants({
                       variant: "default",
-                      className: "hover:!text-primary-foreground",
-                    })]: isActive,
+                      className: "hover:!text-primary-foreground"
+                    }) ]: isActive
                   },
                   "rounded-none border-none"
                 )}
@@ -39,12 +39,12 @@ export default function PaginationBordered() {
                 {page}
               </PaginationLink>
             </PaginationItem>
-          );
+          )
         })}
         <PaginationItem>
           <PaginationNext href="#" className="rounded-none" />
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

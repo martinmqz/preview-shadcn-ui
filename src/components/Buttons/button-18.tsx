@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
 const GroupButtonDemo = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -14,6 +14,6 @@ const GroupButtonDemo = () => (
       </Button>
     </div>
   </div>
-);
+)
 
-export default GroupButtonDemo;
+export default GroupButtonDemo

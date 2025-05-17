@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { StarIcon } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import { StarIcon } from "lucide-react"
 
 const ButtonGradient = ({
   className,
@@ -13,7 +13,7 @@ const ButtonGradient = ({
     )}
     {...props}
   />
-);
+)
 
 const GradientButtonDemo = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -25,6 +25,6 @@ const GradientButtonDemo = () => (
       <StarIcon /> Star
     </ButtonGradient>
   </div>
-);
+)
 
-export default GradientButtonDemo;
+export default GradientButtonDemo

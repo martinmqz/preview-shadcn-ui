@@ -1,33 +1,33 @@
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Copy } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Copy } from "lucide-react"
 
 const tabs = [
   {
     name: "pnpm",
     value: "pnpm",
-    content: "pnpm dlx shadcn@latest add tabs",
+    content: "pnpm dlx shadcn@latest add tabs"
   },
   {
     name: "npm",
     value: "npm",
-    content: "npx shadcn@latest add tabs",
+    content: "npx shadcn@latest add tabs"
   },
   {
     name: "yarn",
     value: "yarn",
-    content: "npx shadcn@latest add tabs",
+    content: "npx shadcn@latest add tabs"
   },
   {
     name: "bun",
     value: "bun",
-    content: "bunx --bun shadcn@latest add tabs",
-  },
-];
+    content: "bunx --bun shadcn@latest add tabs"
+  }
+]
 
-export default function TabsBoxDemo() {
+export default function TabsBoxDemo () {
   return (
-    <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
+    <Tabs defaultValue={tabs[ 0 ].value} className="max-w-xs w-full">
       <TabsList className="p-1 h-auto bg-background gap-1 border">
         {tabs.map((tab) => (
           <TabsTrigger
@@ -51,5 +51,5 @@ export default function TabsBoxDemo() {
         </TabsContent>
       ))}
     </Tabs>
-  );
+  )
 }

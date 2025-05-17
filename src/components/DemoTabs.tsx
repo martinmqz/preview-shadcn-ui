@@ -18,24 +18,24 @@ import VerticalBorderedTabs from "./Tabs/tabs-17"
 import AnimatedTabsDemo from "./Tabs/tabs-18"
 
 const tabs = [
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Default</div><TabsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Underlined</div><TabsUnderlinedDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Separated</div><TabsSeparatedDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Bordered</div><TabsBorderedDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Box</div><TabsBoxDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Bootstrap</div><TabsBootstrapDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Icon</div><TabsIconDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Mobile Navigation</div><TabsMobileNavigationDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">With badge</div><TabsWithBadgeDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Sharp</div><TabsSharpDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Shadow</div><TabsShadowDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Skewed</div><TabSkewedDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Vertical</div><VerticalTabsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Vertical Left Bordered</div><VerticalLeftBorderedTabsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Vertical Separated</div><VerticalSeparatedTabsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Vertical Sharp</div><VerticalSharpTabsDemo /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Vertical Bordered</div><VerticalBorderedTabs /></div>,
-<div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Animated Content</div><AnimatedTabsDemo /></div>
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><TabsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Underlined</div><TabsUnderlinedDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Separated</div><TabsSeparatedDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Bordered</div><TabsBorderedDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Box</div><TabsBoxDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Bootstrap</div><TabsBootstrapDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Icon</div><TabsIconDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Mobile Navigation</div><TabsMobileNavigationDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With badge</div><TabsWithBadgeDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Sharp</div><TabsSharpDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Shadow</div><TabsShadowDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Skewed</div><TabSkewedDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Vertical</div><VerticalTabsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Vertical Left Bordered</div><VerticalLeftBorderedTabsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Vertical Separated</div><VerticalSeparatedTabsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Vertical Sharp</div><VerticalSharpTabsDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Vertical Bordered</div><VerticalBorderedTabs /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Animated Content</div><AnimatedTabsDemo /></div>
 ]
 
 export default function Tabs () {
@@ -48,4 +48,4 @@ export default function Tabs () {
       }
     </>
   )
-}
+};

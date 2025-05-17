@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,8 +7,8 @@ import {
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
 import {
   Copy,
   Ellipsis,
@@ -16,10 +16,10 @@ import {
   Eye,
   MessageCircle,
   Search,
-  User,
-} from "lucide-react";
+  User
+} from "lucide-react"
 
-export default function DropdownMenuWithSubMenu() {
+export default function DropdownMenuWithSubMenu () {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -58,5 +58,5 @@ export default function DropdownMenuWithSubMenu() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import type { ColumnDef } from "@tanstack/react-table";
+import type { ColumnDef } from "@tanstack/react-table"
 import {
   type ColumnFiltersState,
   type SortingState,
@@ -10,20 +10,20 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  useReactTable,
-} from "@tanstack/react-table";
+  useReactTable
+} from "@tanstack/react-table"
 import {
   ArrowUpDown,
   ChevronDown,
   Columns3,
   MoreHorizontal,
   RefreshCcw,
-  SearchIcon,
-} from "lucide-react";
-import * as React from "react";
+  SearchIcon
+} from "lucide-react"
+import * as React from "react"
 
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -31,57 +31,57 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
+import { Input } from "@/components/ui/input"
 import {
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+  TableRow
+} from "@/components/ui/table"
 
 const data: Payment[] = [
   {
     id: "m5gr84i9",
     amount: 316,
     status: "success",
-    email: "ken99@yahoo.com",
+    email: "ken99@yahoo.com"
   },
   {
     id: "3u1reuv4",
     amount: 242,
     status: "success",
-    email: "Abe45@gmail.com",
+    email: "Abe45@gmail.com"
   },
   {
     id: "derv1ws0",
     amount: 837,
     status: "processing",
-    email: "Monserrat44@gmail.com",
+    email: "Monserrat44@gmail.com"
   },
   {
     id: "5kma53ae",
     amount: 874,
     status: "success",
-    email: "Silas22@gmail.com",
+    email: "Silas22@gmail.com"
   },
   {
     id: "bhqecj4p",
     amount: 721,
     status: "failed",
-    email: "carmella@hotmail.com",
-  },
-];
+    email: "carmella@hotmail.com"
+  }
+]
 
 export type Payment = {
   id: string;
   amount: number;
   status: "pending" | "processing" | "success" | "failed";
   email: string;
-};
+}
 
 export const columns: ColumnDef<Payment>[] = [
   {
@@ -104,14 +104,14 @@ export const columns: ColumnDef<Payment>[] = [
       />
     ),
     enableSorting: false,
-    enableHiding: false,
+    enableHiding: false
   },
   {
     accessorKey: "status",
     header: "Status",
     cell: ({ row }) => (
       <div className="capitalize">{row.getValue("status")}</div>
-    ),
+    )
   },
   {
     accessorKey: "email",
@@ -124,30 +124,30 @@ export const columns: ColumnDef<Payment>[] = [
           Email
           <ArrowUpDown />
         </Button>
-      );
+      )
     },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("email")}</div>,
+    cell: ({ row }) => <div className="lowercase">{row.getValue("email")}</div>
   },
   {
     accessorKey: "amount",
     header: () => <div className="text-right">Amount</div>,
     cell: ({ row }) => {
-      const amount = parseFloat(row.getValue("amount"));
+      const amount = parseFloat(row.getValue("amount"))
 
       // Format the amount as a dollar amount
       const formatted = new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "USD",
-      }).format(amount);
+        currency: "USD"
+      }).format(amount)
 
-      return <div className="text-right font-medium">{formatted}</div>;
-    },
+      return <div className="text-right font-medium">{formatted}</div>
+    }
   },
   {
     id: "actions",
     enableHiding: false,
     cell: ({ row }) => {
-      const payment = row.original;
+      const payment = row.original
 
       return (
         <DropdownMenu>
@@ -169,20 +169,20 @@ export const columns: ColumnDef<Payment>[] = [
             <DropdownMenuItem>View payment details</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-      );
-    },
-  },
-];
+      )
+    }
+  }
+]
 
-export default function DataTableColumnsVisibilityDemo() {
-  const [searchQuery, setSearchQuery] = React.useState<string>();
-  const [sorting, setSorting] = React.useState<SortingState>([]);
-  const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
+export default function DataTableColumnsVisibilityDemo () {
+  const [ searchQuery, setSearchQuery ] = React.useState<string>()
+  const [ sorting, setSorting ] = React.useState<SortingState>([])
+  const [ columnFilters, setColumnFilters ] = React.useState<ColumnFiltersState>(
     []
-  );
-  const [columnVisibility, setColumnVisibility] =
-    React.useState<VisibilityState>({});
-  const [rowSelection, setRowSelection] = React.useState({});
+  )
+  const [ columnVisibility, setColumnVisibility ] =
+    React.useState<VisibilityState>({})
+  const [ rowSelection, setRowSelection ] = React.useState({})
 
   const table = useReactTable({
     data,
@@ -199,9 +199,9 @@ export default function DataTableColumnsVisibilityDemo() {
       sorting,
       columnFilters,
       columnVisibility,
-      rowSelection,
-    },
-  });
+      rowSelection
+    }
+  })
 
   return (
     <div className="w-full">
@@ -240,7 +240,7 @@ export default function DataTableColumnsVisibilityDemo() {
                   searchQuery &&
                   !column.id.toLowerCase().includes(searchQuery.toLowerCase())
                 ) {
-                  return null;
+                  return null
                 }
 
                 return (
@@ -255,13 +255,13 @@ export default function DataTableColumnsVisibilityDemo() {
                   >
                     {column.id}
                   </DropdownMenuCheckboxItem>
-                );
+                )
               })}
             <DropdownMenuSeparator />
             <DropdownMenuItem
               onClick={() => {
-                table.resetColumnVisibility();
-                setSearchQuery("");
+                table.resetColumnVisibility()
+                setSearchQuery("")
               }}
             >
               <RefreshCcw /> Reset
@@ -280,11 +280,11 @@ export default function DataTableColumnsVisibilityDemo() {
                       {header.isPlaceholder
                         ? null
                         : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
                     </TableHead>
-                  );
+                  )
                 })}
               </TableRow>
             ))}
@@ -344,5 +344,5 @@ export default function DataTableColumnsVisibilityDemo() {
         </div>
       </div>
     </div>
-  );
+  )
 }

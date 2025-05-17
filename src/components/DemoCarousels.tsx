@@ -10,27 +10,27 @@ import SlideOpacity from "./Carousels/carousel-10"
 import SlideScale from "./Carousels/carousel-11"
 
 const carousels = [
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Default</div><CarouselDemo /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Multiple slides</div><CarouselWithMultipleSlides /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Vertical</div><CarouselVertical /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Slide Status</div><SlideStatus /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Slide Status 2</div><SlideStatus /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Pagination</div><CarouselWithPagination /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Footer</div><CarouselWithFooter /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Progress</div><CarouselWithProgress /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Thumbs</div><CarouselWithThumbs /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Opacity</div><SlideOpacity /></div>,
-  <div className="basis-1/3 p-4 min-w-100"><div className="grid-item__title">Scale</div><SlideScale /></div>
-  ]
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><CarouselDemo /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Multiple slides</div><CarouselWithMultipleSlides /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Vertical</div><CarouselVertical /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Slide Status</div><SlideStatus /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Slide Status 2</div><SlideStatus /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Pagination</div><CarouselWithPagination /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Footer</div><CarouselWithFooter /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Progress</div><CarouselWithProgress /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Thumbs</div><CarouselWithThumbs /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Opacity</div><SlideOpacity /></div>,
+  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Scale</div><SlideScale /></div>
+]
 
 export default function DemoCarousels () {
   return (
     <>
-    {
-      carousels.map(carousel => (
-        carousel
-      ))
-    }
+      {
+        carousels.map(carousel => (
+          carousel
+        ))
+      }
     </>
   )
 }

@@ -1,15 +1,15 @@
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button"
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
-import { cn } from "@/lib/utils";
+  PaginationPrevious
+} from "@/components/ui/pagination"
+import { cn } from "@/lib/utils"
 
-export default function PaginationWithPrimaryButton() {
+export default function PaginationWithPrimaryButton () {
   return (
     <Pagination>
       <PaginationContent>
@@ -27,7 +27,7 @@ export default function PaginationWithPrimaryButton() {
               "!shadow-none hover:!text-primary-foreground",
               buttonVariants({
                 variant: "default",
-                size: "icon",
+                size: "icon"
               })
             )}
           >
@@ -42,5 +42,5 @@ export default function PaginationWithPrimaryButton() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

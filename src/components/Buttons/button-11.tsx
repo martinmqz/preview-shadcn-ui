@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Instagram, Twitch, Twitter } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { Instagram, Twitch, Twitter } from "lucide-react"
 
 const SocialButtonDemo = () => {
   return (
@@ -14,7 +14,7 @@ const SocialButtonDemo = () => {
         <Twitter />
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default SocialButtonDemo;
+export default SocialButtonDemo

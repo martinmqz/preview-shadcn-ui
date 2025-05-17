@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+  CardTitle
+} from "@/components/ui/card"
 
-export default function CardBanner() {
+export default function CardBanner () {
   return (
     <Card className="w-full text-center shadow-none dark py-4">
       <CardHeader>
@@ -24,5 +24,5 @@ export default function CardBanner() {
         <Button variant="secondary">Get a demo</Button>
       </CardContent>
     </Card>
-  );
+  )
 }

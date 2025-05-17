@@ -1,24 +1,24 @@
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+  CardTitle
+} from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+  SelectValue
+} from "@/components/ui/select"
 
-export default function CardWithBackground() {
+export default function CardWithBackground () {
   return (
     <Card className="w-[350px] bg-secondary/50 shadow-none">
       <CardHeader>
@@ -55,5 +55,5 @@ export default function CardWithBackground() {
         <Button>Create</Button>
       </CardFooter>
     </Card>
-  );
+  )
 }

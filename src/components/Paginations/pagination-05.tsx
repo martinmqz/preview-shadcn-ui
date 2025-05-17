@@ -2,11 +2,11 @@ import {
   Pagination,
   PaginationContent,
   PaginationItem,
-  PaginationLink,
-} from "@/components/ui/pagination";
-import { ChevronsLeft, ChevronsRight } from "lucide-react";
+  PaginationLink
+} from "@/components/ui/pagination"
+import { ChevronsLeft, ChevronsRight } from "lucide-react"
 
-export default function PaginationWithIcon() {
+export default function PaginationWithIcon () {
   return (
     <Pagination>
       <PaginationContent>
@@ -33,5 +33,5 @@ export default function PaginationWithIcon() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

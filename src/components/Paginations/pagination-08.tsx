@@ -1,17 +1,17 @@
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button"
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
-import { cn } from "@/lib/utils";
+  PaginationPrevious
+} from "@/components/ui/pagination"
+import { cn } from "@/lib/utils"
 
-const pages = [1, 2, 3];
+const pages = [ 1, 2, 3 ]
 
-export default function PaginationTabs() {
+export default function PaginationTabs () {
   return (
     <Pagination>
       <PaginationContent>
@@ -20,7 +20,7 @@ export default function PaginationTabs() {
         </PaginationItem>
 
         {pages.map((page) => {
-          const isActive = page === 2;
+          const isActive = page === 2
 
           return (
             <PaginationItem key={page}>
@@ -28,17 +28,17 @@ export default function PaginationTabs() {
                 href={`#${page}`}
                 isActive={page === 2}
                 className={cn({
-                  [buttonVariants({
+                  [ buttonVariants({
                     variant: "default",
-                    className: "hover:!text-primary-foreground !shadow-none",
-                  })]: isActive,
-                  border: !isActive,
+                    className: "hover:!text-primary-foreground !shadow-none"
+                  }) ]: isActive,
+                  border: !isActive
                 })}
               >
                 {page}
               </PaginationLink>
             </PaginationItem>
-          );
+          )
         })}
 
         <PaginationItem>
@@ -46,5 +46,5 @@ export default function PaginationTabs() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -9,8 +9,8 @@ import {
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu"
 import {
   Bolt,
   ExternalLink,
@@ -19,10 +19,10 @@ import {
   LogOut,
   Rocket,
   Settings2,
-  User,
-} from "lucide-react";
+  User
+} from "lucide-react"
 
-export default function ComplexDropdownMenu() {
+export default function ComplexDropdownMenu () {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center gap-3">
@@ -133,5 +133,5 @@ export default function ComplexDropdownMenu() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }
