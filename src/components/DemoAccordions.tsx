@@ -12,18 +12,18 @@ import AccordionMediaContentDemo from "./Accordions/accordion-11"
 import AccordionItemDisabledDemo from "./Accordions/accordion-12"
 
 const accordions = [
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><AccordionDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Outline</div><AccordionOutlineDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Box</div><AccordionBoxDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Contained</div><AccordionContainedDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Box Contained</div><AccordionBoxContainedDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs</div><AccordionTabsDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Highlight Active Item</div><AccordionHighlightActiveItemDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Multiple expanded at a time</div><AccordionMultipleOpenDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Expand Icon</div><AccordionDefaultOpenDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Icon</div><AccordionIconDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Media Content</div><AccordionMediaContentDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Disabled Item</div><AccordionItemDisabledDemo /></div>
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><AccordionDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Outline</div><AccordionOutlineDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Box</div><AccordionBoxDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Contained</div><AccordionContainedDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Box Contained</div><AccordionBoxContainedDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs</div><AccordionTabsDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Highlight Active Item</div><AccordionHighlightActiveItemDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Multiple expanded at a time</div><AccordionMultipleOpenDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Expand Icon</div><AccordionDefaultOpenDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Icon</div><AccordionIconDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Media Content</div><AccordionMediaContentDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Disabled Item</div><AccordionItemDisabledDemo /></div>
 ]
 
 export default function DemoAccordions () {

@@ -11,17 +11,17 @@ import SpinnerCircle4 from "./Spinners/spinner-10"
 import SpinnerCircle5 from "./Spinners/spinner-11"
 
 const spinners = [
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><SpinnerDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Circle</div><SpinnerCircleDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Pinwheel</div><SpinnerPinwheelDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Colors</div><SpinnerColorsDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Sizes</div><SpinnerSizesDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Swirling Effect</div><SwirlingEffectSpinner /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 1</div><SpinnerCircle1 /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 2</div><SpinnerCircle2 /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 3</div><SpinnerCircle3 /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 4</div><SpinnerCircle4 /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 5</div><SpinnerCircle5 /></div>
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><SpinnerDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Circle</div><SpinnerCircleDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Pinwheel</div><SpinnerPinwheelDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Colors</div><SpinnerColorsDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Sizes</div><SpinnerSizesDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Swirling Effect</div><SwirlingEffectSpinner /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 1</div><SpinnerCircle1 /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 2</div><SpinnerCircle2 /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 3</div><SpinnerCircle3 /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 4</div><SpinnerCircle4 /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Spinner Circle 5</div><SpinnerCircle5 /></div>
 ]
 
 export default function DemoSpinners () {

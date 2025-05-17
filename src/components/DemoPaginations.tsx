@@ -13,20 +13,20 @@ import PaginationWithEllipsis from "./Paginations/pagination-13"
 import TablePagination from "./Paginations/pagination-14"
 
 const paginations = [
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><PaginationDemo /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Primary Button</div><PaginationWithPrimaryButton /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Secondary Button</div><PaginationWithSecondaryButton /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Rounded Button</div><PaginationWithRoundedButton /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon</div><PaginationWithIcon /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">First and Last Page Buttons</div><PaginationWithFirstAndLastPageNavigation /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Bordered</div><PaginationBordered /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs</div><PaginationTabs /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs Secondary</div><PaginationTabsSecondary /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon and Label</div><PaginationWithIconAndLabel /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Numberless Pagination</div><PaginationNumberless /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Numberless with Text</div><PaginationNumberless /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With ellipsis</div><PaginationWithEllipsis /></div>,
-  <div className="basis-(--thirdbasis) p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Table Pagination</div><TablePagination /></div>
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Default</div><PaginationDemo /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Primary Button</div><PaginationWithPrimaryButton /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Secondary Button</div><PaginationWithSecondaryButton /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Rounded Button</div><PaginationWithRoundedButton /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon</div><PaginationWithIcon /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">First and Last Page Buttons</div><PaginationWithFirstAndLastPageNavigation /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Bordered</div><PaginationBordered /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs</div><PaginationTabs /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Tabs Secondary</div><PaginationTabsSecondary /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With Icon and Label</div><PaginationWithIconAndLabel /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Numberless Pagination</div><PaginationNumberless /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Numberless with Text</div><PaginationNumberless /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">With ellipsis</div><PaginationWithEllipsis /></div>,
+  <div className=" p-4 min-w-100 mb-10"><div className="border-b border-dotted border-(--foreground) pb-2 mb-6">Table Pagination</div><TablePagination /></div>
 ]
 
 export default function DemoPaginations () {

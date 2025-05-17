@@ -33,7 +33,7 @@ const tabs = [
 function App () {
   return (
     <div className='w-full'>
-      <header className='sticky top-0 bg-(--background) border-b-1 z-1'>
+      <header className='sticky top-0 bg-(--background) border-b-1 z-2'>
         <div className='max-w-[1920px] m-auto p-5 flex items-baseline justify-between'>
           <h1 className='text-2xl font-bold'>Shadcn Component with Tailwind CSS</h1>
           <div className='text-xs italic'>Dark/Light Mode &nbsp;<ThemeToggleButton /></div>
@@ -41,7 +41,7 @@ function App () {
       </header>
       <main className='max-w-[1920px] m-auto p-6'>
         <Tabs defaultValue={tabs[ 0 ].value} className='max-sm:gap-30 max-md:gap-20 max-lg:gap-10'>
-          <TabsList className='gap-y-3 sticky top-20 z-1 p-0 bg-background border-b flex-wrap justify-start'>
+          <TabsList className='gap-y-3 md:sticky top-20 z-1 p-0 bg-background border-b flex-wrap justify-start bg-(--background)'>
             {tabs.map(tab => (
               <TabsTrigger key={tab.value} value={tab.value} className=' grow-0 rounded-none bg-background h-full data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-primary'>
                 {tab.name}
