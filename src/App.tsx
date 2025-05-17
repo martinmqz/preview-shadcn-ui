@@ -34,16 +34,16 @@ function App () {
   return (
     <div className='w-full'>
       <header className='sticky top-0 bg-(--background) border-b-1 z-1'>
-        <div className='max-w-[1920px] m-auto p-6 flex items-baseline justify-between'>
+        <div className='max-w-[1920px] m-auto p-5 flex items-baseline justify-between'>
           <h1 className='text-2xl font-bold'>Shadcn Component with Tailwind CSS</h1>
           <div className='text-xs italic'>Dark/Light Mode &nbsp;<ThemeToggleButton /></div>
         </div>
       </header>
       <main className='max-w-[1920px] m-auto p-6'>
-        <Tabs orientation='vertical' defaultValue={tabs[ 0 ].value} className='flex-row items-start gap-6 justify-center'>
-          <TabsList className='shrink-0 grid grid-cols-1 h-auto w-fit gap-1 sticky top-33'>
+        <Tabs defaultValue={tabs[ 0 ].value} className='max-sm:gap-30 max-md:gap-20 max-lg:gap-10'>
+          <TabsList className='gap-y-3 sticky top-20 z-1 p-0 bg-background border-b flex-wrap justify-start'>
             {tabs.map(tab => (
-              <TabsTrigger key={tab.value} value={tab.value} className='py-1.5'>
+              <TabsTrigger key={tab.value} value={tab.value} className=' grow-0 rounded-none bg-background h-full data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-primary'>
                 {tab.name}
               </TabsTrigger>
             ))}
